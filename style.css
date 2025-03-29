@@ -172,8 +172,9 @@ nav li:first-child {
 }
 .home-img img {
   height: 300px;
+  border-radius: 50%;
   z-index: 2;
-  filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
 }
 .home-intro {
   max-width: 1100px;
@@ -496,9 +497,9 @@ nav li:first-child {
   cursor: pointer;
   background: rgba(50, 2, 115, 1);
   display: grid;
-  grid-template-columns: repeat(6, 0.1fr);
+  grid-template-columns: repeat(5, 0.1fr);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   margin: 3rem 0px 6rem 0;
   padding: 30px;
   border-radius: 0.5rem;
@@ -567,7 +568,7 @@ nav li:first-child {
 
 .project-content {
   position: absolute;
-  bottom: 19%;
+  bottom: 20%;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
@@ -582,12 +583,12 @@ nav li:first-child {
   color: #000;
 }
 .project-card:hover .project-content {
-  transform: translateY(40%);
+  transform: translateY(35%);
 }
 
 .project-title {
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
   padding: 15px 0 10px 10px;
-  cursor: pointer;
 }
 
 .project-description {
@@ -596,16 +597,18 @@ nav li:first-child {
 
 .project-description p {
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   line-height: 1.2rem;
   letter-spacing: 0.5px;
-  font-size: 1rem;
-  opacity: 0.9;
+  font-size: 0.9rem;
   color: #333;
   font-weight: 400;
 }
 
 .project-link-buttons {
+  width: 88%;
+  position: absolute;
+  bottom: 55px;
   display: flex;
   justify-content: space-between;
 }
@@ -653,10 +656,10 @@ nav li:first-child {
 }
 .service {
   position: relative;
-  height: 200px;
+  height: 220px;
   width: 300px;
   text-align: center;
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px;
   border-radius: 0.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -675,9 +678,9 @@ nav li:first-child {
   font-weight: 700;
 }
 .service p {
-  padding-inline: 10px;
+  padding-inline: 5px;
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
 }
 .service img {
   position: absolute;
@@ -866,7 +869,7 @@ nav li:first-child {
   align-items: center;
 }
 .footer-info-content h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 0.7rem;
   font-weight: 500;
   color: goldenrod;
@@ -880,9 +883,9 @@ nav li:first-child {
   flex-direction: column;
 }
 .footer-section0 .footer-thanku {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: #f5f0f0;
-  font-weight: 500;
+  font-weight: 400;
   width: 90%;
   letter-spacing: 1px;
 }
@@ -894,7 +897,7 @@ nav li:first-child {
 .footer-link-content {
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .footer-quickLinks {
@@ -925,7 +928,7 @@ nav li:first-child {
   color: darkgray;
 }
 .footer-letsTalk {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .footer-letsTalk i {
@@ -933,18 +936,22 @@ nav li:first-child {
   margin-right: 7px;
 }
 .footer-section2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #f5f0f0;
   display: flex;
-  /* background: #00e6ff; */
   justify-content: center;
+  text-decoration: none;
 }
 .footer-section2 i {
   color: goldenrod;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.footer-section2 a {
+  color: #f8f9fa;
 }
 
 @media (max-width: 750px) {
@@ -989,7 +996,7 @@ nav li:first-child {
 .footer-content h1 {
   margin-top: 2rem;
   color: goldenrod;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .footer-icons a {
   font-size: 1.3rem;
@@ -1010,7 +1017,7 @@ nav li:first-child {
 .footer-links i {
   transition: all 0.3s ease;
   color: #f5f0f0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 5px;
 }
 .copyright-partition {
@@ -1025,6 +1032,6 @@ nav li:first-child {
   justify-content: center;
   align-items: center;
   margin: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #f5f0f0;
 }
